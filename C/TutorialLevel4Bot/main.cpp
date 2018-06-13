@@ -46,6 +46,7 @@ int main(int argc, const char* argv[])
 				myBotModule->onEnd(e.isWinner());
 				break;
 			case EventType::MatchFrame:
+std::cout << "Match started" << std::endl;
 				myBotModule->onFrame();
 				break;
 			case EventType::SendText:
